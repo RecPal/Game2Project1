@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
@@ -35,14 +36,14 @@ public class MomentumBallPlayer : MonoBehaviour
     [SerializeField] float mouseX;                       // Current mouseX position
     [SerializeField] float mouseY;                       // Current mouseY position
     [SerializeField] float cameraTurnSpeed = 0.1f;       // Camera turn speed (Interpolation value)
+    [SerializeField] float mouseSensitivityMultiple = 1.0f;
 
     private Vector3 cameraForward;                       // Camera's forward vector, for making inputs camera relative
 
     void Start()
     {
         playerRB = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();    // Assigns the player rigidbody component to the variable
-        cameraTransform = cameraObj.transform;           
-        Application.targetFrameRate = 60;                         // Pulls camera transform from Unity camera reference
+        cameraTransform = cameraObj.transform;                                    // Pulls camera transform from Unity camera reference
     }
 
     private void OnPreRender()
@@ -67,6 +68,8 @@ public class MomentumBallPlayer : MonoBehaviour
         }
 
         cameraUpdate();
+
+        if(debug) { print(playerRB.velocity.magnitude); }
     }
 
     private void ButtonInputReaderAndBoostTimer()
@@ -100,6 +103,8 @@ public class MomentumBallPlayer : MonoBehaviour
             }
         }
         
+
+
     }
 
     private void addFlipForce()
@@ -164,8 +169,8 @@ public class MomentumBallPlayer : MonoBehaviour
 
     private void cameraUpdate()
     {
-        mouseX = mouseX + Input.GetAxis("Mouse X");
-        mouseY = mouseY + Input.GetAxis("Mouse Y");
+        mouseX = mouseX + (Input.GetAxis("Mouse X") * mouseSensitivityMultiple);
+        mouseY = mouseY + (Input.GetAxis("Mouse Y") * mouseSensitivityMultiple);
 
         if (mouseY < minMouseY) { mouseY = minMouseY; }
         if (mouseY > maxMouseY) { mouseY = maxMouseY; }
