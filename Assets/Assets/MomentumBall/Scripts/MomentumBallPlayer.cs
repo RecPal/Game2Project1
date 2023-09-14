@@ -26,8 +26,6 @@ public class MomentumBallPlayer : MonoBehaviour
     [Header("Forces and cooldown for manual boost (Turning around)")]
     [SerializeField] float moveForce = 15;               // Movement force multiplier
     [SerializeField] float boostForce = 20;              // Manual boost force multiplier
-    [SerializeField] float boostCooldown = 3;            // Boost cooldown for manual boost
-    [SerializeField] float currentBoostCooldown;         // Actual boost cooldown value
     [SerializeField] float manualTurnForce = 2;          // Turn force. 1 means stop, 2 means turn around without losing momentum
 
     [Header("Mouse min and max, as well as current position and camera turn speed")]
@@ -83,25 +81,16 @@ public class MomentumBallPlayer : MonoBehaviour
         {
             addFlipForce();
         }
-
-        else if (currentBoostCooldown < 0)
-        {
-            currentBoostCooldown = 0;
-           
-        } else if ( currentBoostCooldown != 0) { currentBoostCooldown -= Time.deltaTime; }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (currentBoostCooldown == 0.0f)
-        {
-            if (other.gameObject.tag == "BoostPad")
+
+            if (other.gameObject.tag == "BoostPad" && other.gameObject.GetComponent<BoostpadScript>().boostActivated())
             {
                 if (debug) { print("Boost Activated!"); }
-                currentBoostCooldown = boostCooldown;
                 addBoostVelocity();
             }
-        }
         
 
 
