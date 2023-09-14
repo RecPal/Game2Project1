@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\coinFloatScript.cs" />
     <Compile Include="Assets\Scripts\LightSwitch.cs" />
     <Compile Include="Assets\Assets\MomentumBall\Scripts\MomentumBallPlayer.cs" />
+    <Compile Include="Assets\Assets\MomentumBall\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
