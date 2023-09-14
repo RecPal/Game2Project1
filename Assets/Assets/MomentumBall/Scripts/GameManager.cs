@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     private Rigidbody playerRB;
+
+    [SerializeField] CanvasGroup fadeObj;
 
     [Header("What is the cutoff velocity")]
     public float velocityCutoff = 10;
@@ -25,6 +28,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] float transitionHangTime;
 
     private bool readyToTransition;
+    private bool levelComplete;
+    private bool transitionInProcess = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +40,12 @@ public class GameManager : MonoBehaviour
         playerLight.enabled = false;
         playerLight.intensity = 0.0f;
         readyToTransition = false;
+        levelComplete = false;
+
+        CanvasGroup temp = fadeObj;
+        temp.alpha = 1.0f;
+
+        StartCoroutine(FadeInLevel());
     }
 
     // Update is called once per frame
@@ -42,8 +53,9 @@ public class GameManager : MonoBehaviour
     {
         currentVelocity = playerRB.velocity.magnitude;
 
-        if (currentTime > timeHold)
+        if (currentTime > timeHold || levelComplete)
         {
+            levelComplete = true;
             endGameTransition();
         }
 
@@ -65,19 +77,27 @@ public class GameManager : MonoBehaviour
         {
             transitionTime -= Time.deltaTime;
 
-            playerLight.intensity += Time.deltaTime * 2;
+            playerLight.intensity += Time.deltaTime * 4;
         }
 
-        if (transitionTime < 0) { 
+        if (transitionTime < 0 && !readyToTransition) { 
             playerRB.gameObject.GetComponent<MeshRenderer>().enabled = false;
-            playerLight.intensity = 0;
-            playerRB.gameObject.isStatic = true;
+            playerLight.intensity -= Time.deltaTime * 8;
             readyToTransition = true;
+            
         }
 
-        if (transitionHangTime > 0 && readyToTransition == true)
+        if (readyToTransition && !transitionInProcess)
         {
+            StartCoroutine(FadeOutLevel());
+            transitionInProcess = true;
+        }
+
+        if (readyToTransition == true)
+        {
+            playerRB.constraints = RigidbodyConstraints.FreezeAll;
             transitionHangTime -= Time.deltaTime;
+            
         }
 
         if (transitionHangTime < 0)
@@ -86,5 +106,29 @@ public class GameManager : MonoBehaviour
         }
 
         
+    }
+
+    IEnumerator FadeInLevel()
+    {
+        CanvasGroup canvasGroup = fadeObj;
+        while (canvasGroup.alpha > 0)
+        {
+            canvasGroup.alpha -= Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        yield return null;
+    }
+
+    IEnumerator FadeOutLevel()
+    {
+        CanvasGroup canvasGroup = fadeObj;
+
+        while (canvasGroup.alpha < 1)
+        {
+            canvasGroup.alpha += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+            //print(canvasGroup.alpha);
+        }
+        yield return null;
     }
 }

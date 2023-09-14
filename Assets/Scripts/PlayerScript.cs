@@ -25,9 +25,9 @@ public class PlayerScript : MonoBehaviour
     public void OnCollisionEnter(Collision col)
     {
         
-        print(col.collider.name);
+//        print(col.collider.name);
         if(col.collider.tag == "CoinTag") {
-            print("hit");
+//            print("hit");
             Destroy(col.collider);
         }
     }
