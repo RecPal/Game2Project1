@@ -23105,6 +23105,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 5052930416304991392, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -57.241722
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052930416304991392, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.1505146
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
