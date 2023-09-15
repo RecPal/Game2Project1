@@ -33,7 +33,7 @@ public class MomentumBallPlayer : MonoBehaviour
     [SerializeField] float maxMouseY = 70;               // Maximum y axis for mouse (Inverted)
     [SerializeField] float mouseX;                       // Current mouseX position
     [SerializeField] float mouseY;                       // Current mouseY position
-    [SerializeField] float cameraTurnSpeed = 0.1f;       // Camera turn speed (Interpolation value)
+    [SerializeField] float cameraTurnSpeed = 0.2f;       // Camera turn speed (Interpolation value)
     [SerializeField] float mouseSensitivityMultiple = 1.0f;
 
     private Vector3 cameraForward;                       // Camera's forward vector, for making inputs camera relative

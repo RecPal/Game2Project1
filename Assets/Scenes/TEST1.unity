@@ -4457,6 +4457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 1309532798}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9352,6 +9356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 1309532798}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14181,6 +14189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 1309532798}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16033,6 +16045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 1309532798}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16884,6 +16900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 1309532798}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20804,6 +20824,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 282a5e6e563c8ce45a63811e91c78c1e, type: 3}
+--- !u!114 &1309532798 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 613977641227913855, guid: 989b56ffa38e5b1419196a2d6362d70b, type: 3}
+  m_PrefabInstance: {fileID: 1207810522}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1311975496 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
@@ -22483,18 +22514,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.544567
       objectReference: {fileID: 0}
@@ -22534,14 +22553,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5421747126857476606, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
       propertyPath: m_Name
       value: coinGold
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 1309532798}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29277,6 +29296,67 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 0.99999994, z: 1.0000001}
   m_Center: {x: -0.00000166893, y: 0.49999997, z: 0.000002861023}
+--- !u!1001 &1910255646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.109398
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.908047
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644964824607224644, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421747126857476606, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: m_Name
+      value: coinGold (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 1309532798}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
 --- !u!1001 &1918821952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31860,6 +31940,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 5052930416304991392, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052930416304991392, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254605099800047146, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
+      propertyPath: moveForce
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 5466923073621839148, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
       propertyPath: text
       value: 
@@ -32742,3 +32834,4 @@ SceneRoots:
   - {fileID: 1831689689}
   - {fileID: 960587339}
   - {fileID: 2108096307}
+  - {fileID: 1910255646}
