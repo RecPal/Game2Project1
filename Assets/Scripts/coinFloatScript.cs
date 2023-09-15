@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 public class coinFloatScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    public Slider velocitySlider;
     public float counter;
     public bool goingUp;
     public float origPos;
@@ -24,16 +27,18 @@ public class coinFloatScript : MonoBehaviour
         
         
         
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        newPos = origPos + (float)counter;
-        rotY = transform.rotation.y;
+        //newPos = origPos + (float)counter;
+        //rotY = transform.rotation.y;
         transform.Rotate(0f, 65f * Time.deltaTime, 0f, Space.Self);
         //transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y + 0.003f, transform.rotation.z, transform.rotation.w);
-        transform.position = new Vector3(transform.position.x, newPos, transform.position.z);
+       // transform.position = new Vector3(transform.position.x, newPos, transform.position.z);
+       /*
         if(goingUp) {
             counter += 0.009f;
         } else {
@@ -45,7 +50,7 @@ public class coinFloatScript : MonoBehaviour
             print("going down");
         } else if ((counter <= 0f) && (goingUp == false)) {
             goingUp = true;
-        }
+        }*/
         
     }
 
@@ -54,6 +59,11 @@ public class coinFloatScript : MonoBehaviour
             Destroy(this.gameObject);
             PlayerScript plrScript = col.GetComponent<PlayerScript>();
             plrScript.coins += 1;
+            GameManager gmScript = GameObject.Find("GameManager").GetComponent<GameManager>();
+            gmScript.velocityCutoff -= 2;
+            velocitySlider.maxValue -= 2;
+            
+            print("didit");
         } else {
             print(col.name);
         }
