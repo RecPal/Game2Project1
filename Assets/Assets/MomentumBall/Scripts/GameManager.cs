@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
     public float currentVelocity;
 
     [Header("How long do you have to hold the velocity")]
-    [SerializeField] float timeHold = 5;
-    [SerializeField] float currentTime;
+    public float timeHold = 5;
+    public float currentTime;
 
     [Header("Player exit material and light object")]
     [SerializeField] Material playerEndMat;
