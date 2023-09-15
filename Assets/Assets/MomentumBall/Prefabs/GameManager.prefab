@@ -50,7 +50,7 @@ MonoBehaviour:
   timeHold: 3
   currentTime: 0
   playerEndMat: {fileID: 2100000, guid: acb24232ca4609a418d5fb43e6988dfc, type: 2}
-  playerLight: {fileID: 0}
+  playerLight: {fileID: 5305690635428464423, guid: 42e65720996924e4cac9df9daba8a3a7, type: 3}
   nextSceneName: TEST1
   transitionTime: 3
   transitionHangTime: 2
