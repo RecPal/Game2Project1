@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 
 public class MomentumBallPlayer : MonoBehaviour
 {
@@ -94,7 +95,9 @@ public class MomentumBallPlayer : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             print("pressed R");
-            GameObject.Find("PlayerSphere").transform.position = spawnObject.transform.position;
+            //GameObject.Find("PlayerSphere").transform.position = spawnObject.transform.position;
+            UnityEngine.SceneManagement.Scene myScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(myScene.name);
         }
     }
 
