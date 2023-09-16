@@ -618,7 +618,7 @@ MonoBehaviour:
   text: {fileID: 761652123}
   textIN: Also, there are coins you can collect with a counter in the top left of
     the screen. Each coin collected reduces the velocity goal you need to reach to
-    beat a level
+    beat a level, though it is optional to collect them.
   isActive: 0
 --- !u!4 &61256825 stripped
 Transform:
@@ -5751,12 +5751,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WASD to move
+  m_Text: 'WASD to move.
 
-    Mouse changes camera and movement axis
+    Mouse angles camera and changes motion axis.
 
-    Click or
-    ctrl to flip camera and momentum'
+    Click
+    or ctrl to flip camera and momentum.'
 --- !u!222 &761652124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7249,8 +7249,9 @@ MonoBehaviour:
   activeMat: {fileID: 2100000, guid: 03bbf0b690de2764baa35c78fd0ddd1a, type: 2}
   disabledMat: {fileID: 2100000, guid: 7548619dafc03544a9f44bdf1b4605da, type: 2}
   text: {fileID: 761652123}
-  textIN: As you just saw, when you reach the correct speed, a timer appears letting
-    you know how much longer you need to maintain it, but if you lose speed, it restarts.
+  textIN: As you just saw, when you reach the correct speed a timer appears letting
+    you know how much longer you need to maintain it, but if you fall beneath the
+    threshold, it restarts.
   isActive: 0
 --- !u!4 &974797770 stripped
 Transform:
@@ -8990,7 +8991,7 @@ MonoBehaviour:
   activeMat: {fileID: 2100000, guid: 03bbf0b690de2764baa35c78fd0ddd1a, type: 2}
   disabledMat: {fileID: 2100000, guid: 7548619dafc03544a9f44bdf1b4605da, type: 2}
   text: {fileID: 761652123}
-  textIN: Obstacles like the one ahead can halt you and make the fight for momentum
+  textIN: Obstacles, like this hedge, can halt you and make the fight for momentum
     more difficult.
   isActive: 0
 --- !u!4 &1195349704 stripped
@@ -9155,7 +9156,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9066356537537576882, guid: 1a15db8c4fe84234d951d9c26a81f838, type: 3}
 --- !u!1001 &1217816832
@@ -11506,7 +11507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254605099800047146, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
       propertyPath: mouseSensitivityMultiple
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5466923073621839148, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
       propertyPath: text
@@ -11617,9 +11618,9 @@ MonoBehaviour:
   activeMat: {fileID: 2100000, guid: 03bbf0b690de2764baa35c78fd0ddd1a, type: 2}
   disabledMat: {fileID: 2100000, guid: 7548619dafc03544a9f44bdf1b4605da, type: 2}
   text: {fileID: 761652123}
-  textIN: The goal of the game is to reach a certain velocity and then maintain it
-    for a certain time. The bar below shows how much speed you have out of the required
-    amount.
+  textIN: The goal of this game is to reach a certain velocity and then maintain
+    it for a certain time. The bar below shows how much speed you have out of the
+    required amount.
   isActive: 0
 --- !u!4 &1614491209 stripped
 Transform:
@@ -12398,8 +12399,9 @@ MonoBehaviour:
   activeMat: {fileID: 2100000, guid: 03bbf0b690de2764baa35c78fd0ddd1a, type: 2}
   disabledMat: {fileID: 2100000, guid: 7548619dafc03544a9f44bdf1b4605da, type: 2}
   text: {fileID: 761652123}
-  textIN: However, boost pads can greatly enhance your speed. Though it becomes harder
-    to control, and you can't reuse the same pad until the cooldown wears off.
+  textIN: However, boost pads can greatly enhance your speed depending on your speed
+    and angle when you cross them. Though, it becomes harder to control, and you
+    can't reuse the same pad until the cooldown wears off.
   isActive: 0
 --- !u!4 &1690731557 stripped
 Transform:
@@ -14272,8 +14274,8 @@ MonoBehaviour:
   activeMat: {fileID: 2100000, guid: 03bbf0b690de2764baa35c78fd0ddd1a, type: 2}
   disabledMat: {fileID: 2100000, guid: 7548619dafc03544a9f44bdf1b4605da, type: 2}
   text: {fileID: 761652123}
-  textIN: However, bright bouncy objects can help you change direction without losing
-    too much speed.
+  textIN: Bright bouncy objects can help you change direction without losing too
+    much speed.
   isActive: 0
 --- !u!4 &2000669291 stripped
 Transform:
