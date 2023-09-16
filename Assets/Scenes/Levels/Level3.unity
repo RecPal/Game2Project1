@@ -1811,6 +1811,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
+      propertyPath: fadeObj
+      value: 
+      objectReference: {fileID: 1680055832}
+    - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
       propertyPath: timeHold
       value: 5
       objectReference: {fileID: 0}
@@ -1820,7 +1824,7 @@ PrefabInstance:
       objectReference: {fileID: 5305690635428464423, guid: 42e65720996924e4cac9df9daba8a3a7, type: 3}
     - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
       propertyPath: nextSceneName
-      value: Level0
+      value: End Screen
       objectReference: {fileID: 0}
     - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
       propertyPath: velocityCutoff
@@ -18638,6 +18642,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 989b56ffa38e5b1419196a2d6362d70b, type: 3}
+--- !u!225 &1680055832 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 660700136572695261, guid: 989b56ffa38e5b1419196a2d6362d70b, type: 3}
+  m_PrefabInstance: {fileID: 1680055831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1684029921
 PrefabInstance:
   m_ObjectHideFlags: 0
