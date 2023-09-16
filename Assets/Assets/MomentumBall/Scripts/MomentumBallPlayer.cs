@@ -36,6 +36,9 @@ public class MomentumBallPlayer : MonoBehaviour
     [SerializeField] float cameraTurnSpeed = 0.2f;       // Camera turn speed (Interpolation value)
     [SerializeField] float mouseSensitivityMultiple = 1.0f;
 
+    [Header("Spawn Point")]
+
+    [SerializeField] GameObject spawnObject;
     private Vector3 cameraForward;                       // Camera's forward vector, for making inputs camera relative
 
     void Start()
@@ -86,6 +89,12 @@ public class MomentumBallPlayer : MonoBehaviour
         {
             print("pressed N");
             GameObject.Find("GameManager").GetComponent<GameManager>().currentTime = 70;
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            print("pressed R");
+            GameObject.Find("PlayerSphere").transform.position = spawnObject.transform.position;
         }
     }
 
