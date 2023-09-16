@@ -1821,7 +1821,7 @@ PrefabInstance:
       objectReference: {fileID: 5305690635428464423, guid: 42e65720996924e4cac9df9daba8a3a7, type: 3}
     - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
       propertyPath: nextSceneName
-      value: TutorialLevel
+      value: Level0
       objectReference: {fileID: 0}
     - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
       propertyPath: velocityCutoff
