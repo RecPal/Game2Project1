@@ -19908,11 +19908,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 917909332688808892, guid: 989b56ffa38e5b1419196a2d6362d70b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 917909332688808892, guid: 989b56ffa38e5b1419196a2d6362d70b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -197
+      value: 40.578
       objectReference: {fileID: 0}
     - target: {fileID: 1990543760455560200, guid: 989b56ffa38e5b1419196a2d6362d70b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -33469,7 +33469,7 @@ PrefabInstance:
       objectReference: {fileID: 463961060}
     - target: {fileID: 5254605099800047146, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
       propertyPath: mouseSensitivityMultiple
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5466923073621839148, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
       propertyPath: text
