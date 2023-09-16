@@ -81,6 +81,12 @@ public class MomentumBallPlayer : MonoBehaviour
         {
             addFlipForce();
         }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            print("pressed N");
+            GameObject.Find("GameManager").GetComponent<GameManager>().currentTime = 70;
+        }
     }
 
     private void OnTriggerStay(Collider other)
