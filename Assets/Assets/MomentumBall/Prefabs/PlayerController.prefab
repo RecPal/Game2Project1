@@ -448,7 +448,8 @@ MonoBehaviour:
   mouseX: 0
   mouseY: 0
   cameraTurnSpeed: 0.1
-  mouseSensitivityMultiple: 1
+  mouseSensitivityMultiple: 4
+  spawnObject: {fileID: 0}
 --- !u!65 &367596575746586851
 BoxCollider:
   m_ObjectHideFlags: 0
