@@ -26414,6 +26414,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
+      propertyPath: nextSceneName
+      value: TEST3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
       propertyPath: velocityCutoff
       value: 50
       objectReference: {fileID: 0}

@@ -650,6 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691740ce98e6d084894cf7765c9b86a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocitySlider: {fileID: 0}
   counter: 0
   goingUp: 0
   origPos: 0
@@ -1428,6 +1429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691740ce98e6d084894cf7765c9b86a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocitySlider: {fileID: 0}
   counter: 0
   goingUp: 0
   origPos: 0
@@ -1510,6 +1512,10 @@ PrefabInstance:
       propertyPath: playerLight
       value: 
       objectReference: {fileID: 1947425248}
+    - target: {fileID: 8447429043174113005, guid: a26da67c15685ae42b9e4e7d19b395b0, type: 3}
+      propertyPath: nextSceneName
+      value: TutorialLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 9211686937327736254, guid: a26da67c15685ae42b9e4e7d19b395b0, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1787,6 +1793,7 @@ SceneRoots:
   - {fileID: 1716915211}
   - {fileID: 2048827066}
   - {fileID: 1729322431396756200}
+  - {fileID: 782736964731590621}
   - {fileID: 5875671994701781106}
   - {fileID: 1168423931}
   - {fileID: 613688640}
@@ -1799,4 +1806,3 @@ SceneRoots:
   - {fileID: 2134508709}
   - {fileID: 1463966869}
   - {fileID: 1270739877}
-  - {fileID: 782736964731590621}
