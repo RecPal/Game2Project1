@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.07862278, g: 0.23083645, b: 0.6553888, a: 1}
+  m_IndirectSpecularColor: {r: 0.07862278, g: 0.23083645, b: 0.65538865, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22936,7 +22936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.62
+      value: -5.629
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22944,7 +22944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.05
+      value: 9.072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23959,7 +23959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.62
+      value: -5.629
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23967,7 +23967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.64
+      value: 12.662
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b7e2ae8c835ed841a6a7987e6e4b988, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28005,7 +28005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3963913795308830899, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
       propertyPath: velocityCutoff
-      value: 45
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4462945304380189664, guid: 77cd9956bfc246d449ecd401fdb15133, type: 3}
       propertyPath: m_Name
@@ -33399,7 +33399,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5254605099800047146, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
       propertyPath: moveForce
-      value: 400
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 5254605099800047146, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
+      propertyPath: mouseSensitivityMultiple
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5466923073621839148, guid: 26cd4d9129d01af408495a9723f99ebd, type: 3}
       propertyPath: text
