@@ -14184,6 +14184,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1094857313}
   m_SourcePrefab: {fileID: 100100000, guid: 0dbd74f5473122d45a65664cc8ea7003, type: 3}
+--- !u!114 &628418313 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 613977641227913855, guid: 989b56ffa38e5b1419196a2d6362d70b, type: 3}
+  m_PrefabInstance: {fileID: 1843123858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &628708149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29450,6 +29461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 628418313}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35712,6 +35727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 628418313}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36557,6 +36576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 628418313}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38706,6 +38729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 628418313}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46481,6 +46508,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8077621838776237574, guid: ab038ba48d26bae4babf1c9410ea6436, type: 3}
+      propertyPath: velocitySlider
+      value: 
+      objectReference: {fileID: 628418313}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
