@@ -1527,8 +1527,8 @@ MonoBehaviour:
   activeMat: {fileID: 2100000, guid: 03bbf0b690de2764baa35c78fd0ddd1a, type: 2}
   disabledMat: {fileID: 2100000, guid: 7548619dafc03544a9f44bdf1b4605da, type: 2}
   text: {fileID: 761652123}
-  textIN: And as a final note, the R key will reset the level, and N key will instantly
-    move you to the next one.
+  textIN: And as a final note, the R key will reset the player position for if you're
+    stuck, and N key will instantly move you to the next one.
   isActive: 0
 --- !u!1001 &155881870
 PrefabInstance:
