@@ -1514,7 +1514,7 @@ PrefabInstance:
       objectReference: {fileID: 1947425248}
     - target: {fileID: 8447429043174113005, guid: a26da67c15685ae42b9e4e7d19b395b0, type: 3}
       propertyPath: nextSceneName
-      value: TutorialLevel
+      value: InputScene
       objectReference: {fileID: 0}
     - target: {fileID: 9211686937327736254, guid: a26da67c15685ae42b9e4e7d19b395b0, type: 3}
       propertyPath: m_Name
